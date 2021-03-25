@@ -11,7 +11,7 @@ nix build github:hardenedlinux/nixpkgs-hardenedlinux#spicy
 
 
 #+begin_src sh :async t :exports both :results output
-nix build github:hardenedlinux/nixpkgs-hardenedlinux#zeek
+nix build github:hardenedlinux/zeek-nix#zeekTLS
 #+end_src
 
 
