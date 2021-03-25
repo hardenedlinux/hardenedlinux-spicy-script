@@ -1,0 +1,27 @@
+#+TITLE: README
+
+* Build Spicy via Nix
+
+#+begin_src sh :async t :exports both :results output
+nix build github:hardenedlinux/nixpkgs-hardenedlinux#spicy
+#+end_src
+
+
+* Build Spicy plugin with Zeek (default enable in Nix build)
+
+
+#+begin_src sh :async t :exports both :results output
+nix build github:hardenedlinux/nixpkgs-hardenedlinux#zeek
+#+end_src
+
+
+
+
+*  Test Script
+
+#+begin_src sh :async t :exports both :results output
+./result/bin/spicyc -j scripts/hello.spicy
+#+end_src
+
+#+RESULTS:
+: Hello, world!
